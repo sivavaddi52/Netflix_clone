@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #181818;
+    width: 100%;
+}
+.banner{
+    padding-top: 100px;
+}
+.banner .banner-heading{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:1000;
+    font-size: 2.75rem;
+    margin: 10px 30px;
+}
+.banner .banner-description{
+    color: #fff;
+    margin: 10px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+    max-width:60%;
+}
+section .posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin: 1% 2%;
+    width: 100%;
+}
+section .posters .postertitle .poster{
+    
+    height: 150px;
+    margin: 0% 7px;
+    transition: transform 420ms;
+}
+section .posters .poster:hover{
+    transform: scale(1.1);
+}
+section .posters::-webkit-scrollbar{
+    display: none;
+}
+section h1{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1% 2%;
+}
+section .posters .postertitle h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+nav .logo{
+    width: 90px;
+    object-fit: contain;
+    margin: -15px 20px;
+}
+nav .profile{
+    width: 40px;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 2px solid #ff00;
+    margin: 10px 20px;
+}
+nav {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    background-color: #111;
+
+}
+.container1{
+    background-image: linear-gradient(90deg,#333 5%,#181818 95%);
+    box-shadow: 8px 5px 16px 0 rgba(0,0,0,.37);
+    height: 55px;
+    width: 100%;
+    display: flex;
+    margin: 5% 0%;
+    justify-content: space-between;
+}
+
+.container1 .container-img{
+    display: flex;
+    color: #fff;
+}
+.container1 .container-img h3{
+  padding: 8% 0%;
+  font-size: 1.2rem;
+  display: flex;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container1 .container-img img{
+    margin: 3% 0%;
+}
+.container1 button{
+    background: red;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    width: 80px;
+    height: 40px;
+    margin: 10px 10px;    
+}
+footer{
+    padding: 50px  10px;
+    border-top: 5px solid #333;
+    color: #666;
+    width: 100%;
+}  
+footer h1{
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+    margin-left: 70px;
+
+}
+footer .col{
+    margin: 10px 0px;
+}
+footer .row{
+    display: flex;
+    align-items: start;
+    padding: 10px 0px;
+    width: 100%;
+}
+footer .col a{
+    text-decoration: none;
+    color: #666;
+    font-size: 1rem;
+    padding: 10px 70px;
+    display: block;
+}
+
+.launguage{
+    background-color: transparent;
+    border: 2px solid #666;
+    margin: 1% 4%;
+    padding: 10px 20px;
+    color: #666;
+} 
+i{
+   padding: 6px; 
+   color: #666;
+}
+.country{
+    margin:8px 50px;
+    font-size: 0.8rem;
+}
+@media  (max-width:786px) {
+    body{
+        height: 200vh;
+    }
+    .banner .banner-heading{
+        font-size: 2rem;
+    }
+    .banner .banner-description{
+        margin: 10px 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        font-size: 0.8rem;
+        max-width:100%;
+    }
+    section .posters .postertitle .poster{
+         height: 80px;
+    }
+    section h1{
+        font-size: 1rem;
+    }
+    section .posters .postertitle h3{
+        font-size: 0.6rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+    footer{
+        padding: 20px  0px;
+    }
+    footer h1{
+        font-size: 0.8rem;
+        font-weight: 400;
+        margin-bottom: 15px;
+        margin-left: 20px;
+    }
+    footer .col{
+        margin: 5px 0px;
+    }
+    footer .row{
+        padding: 5px 0px;
+    }
+    footer .col a{
+        font-size: 0.6rem;
+        padding: 10px 20px;   
+    }  
+}
+
+    
+

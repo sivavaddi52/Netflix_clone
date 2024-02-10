@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #111;
+    color: #fff;
+}
+nav{
+    display: flex;
+    justify-content: space-between; 
+    margin: 2% 4%;
+    background-color: transparent;
+    position: fixed;
+}
+nav .nav-left img{
+    width:100px;
+    object-fit: contain; 
+
+}
+nav .nav-middle ul{
+    display: flex;
+    list-style: none;
+    padding-left: 90px;
+}
+nav .nav-middle ul li{
+    padding: 0px 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    transition: 0.4sec;
+}
+nav .nav-middle ul li:hover{
+    color: #fff;
+    cursor: pointer;
+} 
+nav .nav-right{
+    display: flex;
+    margin-left:100px;
+}
+nav .nav-right a{
+    text-decoration: none;
+    color: #d4d3d3;
+    margin: 0px 10px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+nav .nav-right a:hover{
+    color: #fff;
+}
+.profile{
+    display: flex;
+}
+.profile img{
+    object-fit: contain;
+    width: 50px;
+    margin: -10px 10px;
+    border-radius: 10%;
+    
+}
+.banner video{
+    width: 100%;
+   
+}
+section .posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin: 1% 2%;
+    width: 100%;
+}
+section .posters .postertitle .poster{
+    
+    height: 150px;
+    margin: 0% 7px;
+    transition: transform 420ms;
+}
+section .posters .poster:hover{
+    transform: scale(1.1);
+}
+section .posters::-webkit-scrollbar{
+    display: none;
+}
+section h1{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1% 2%;
+}
+section .posters .postertitle h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+.banners{
+    margin: -17% 0 0 0;
+}
